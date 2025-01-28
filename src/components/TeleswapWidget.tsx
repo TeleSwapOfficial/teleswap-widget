@@ -11,6 +11,7 @@ export interface TeleswapWidgetProps {
   buttonColor?: string;
   borderColor?: string;
   logoUrl?: string;
+  dexAssetAddress?: string;
 }
 
 export const TeleswapWidget: React.FC<TeleswapWidgetProps> = ({
@@ -23,6 +24,7 @@ export const TeleswapWidget: React.FC<TeleswapWidgetProps> = ({
   buttonColor,
   borderColor,
   logoUrl,
+  dexAssetAddress,
 }) => {
   const baseUrl = 'https://widget.teleswap.io/';
   const params = new URLSearchParams({
@@ -32,11 +34,11 @@ export const TeleswapWidget: React.FC<TeleswapWidgetProps> = ({
     apiKey,
   });
   if (width < 360) width = 360;
-  if (height < 300) height = 350;
+  if (height < 350) height = 350;
   if (buttonColor) params.append('buttonColor', buttonColor);
   if (borderColor) params.append('borderColor', borderColor);
   if (logoUrl) params.append('logoUrl', logoUrl);
-
+  if (dexAssetAddress) params.append('dexAssetAddress', dexAssetAddress);
   const url = `${baseUrl}?${params.toString()}`;
 
   return (
