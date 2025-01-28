@@ -2,6 +2,14 @@
   "name": "teleswap-widget",
   "version": "1.0.0",
   "description": "React component for Teleswap widget",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeleSwapOfficial/teleswap-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TeleSwapOfficial/teleswap-widget/issues"
+  },
+  "homepage": "https://github.com/TeleSwapOfficial/teleswap-widget#readme",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
