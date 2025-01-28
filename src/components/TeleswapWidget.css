@@ -1,0 +1,11 @@
+.teleswap-container {
+  min-width: 360px;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.teleswap-iframe {
+  min-width: 360px;
+  min-height: 300px;
+}
