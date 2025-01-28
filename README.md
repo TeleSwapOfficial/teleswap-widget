@@ -91,7 +91,8 @@ The widget has minimum dimensions of 360x300 pixels. You can customize the size 
 `<TeleswapWidget width="400px" height="600px" />`
 
 - Using percentage values:
-  `<TeleswapWidget width="100%" height="100%" />`
+
+`<TeleswapWidget width="100%" height="100%" />`
 
 ## Setting Tokens
 
